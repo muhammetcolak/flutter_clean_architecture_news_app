@@ -27,7 +27,7 @@ Widget build(BuildContext context) {
 
 Widget _buildImage(BuildContext context) {
   return CachedNetworkImage(
-    imageUrl: article!.urlToImage!,
+    imageUrl: article!.urlToImage ?? '',
     imageBuilder: (context, imageProvider) => Padding(
       padding: const EdgeInsetsDirectional.only(end: 14),
       child: ClipRRect(
@@ -87,7 +87,7 @@ Widget _buildTitleAndDescription() {
         children: [
           // Title
           Text(
-            article!.title?? '',
+            article!.title ?? '',
             maxLines: 3,
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(
@@ -115,7 +115,7 @@ Widget _buildTitleAndDescription() {
               const Icon(Icons.timeline_outlined, size: 16),
               const SizedBox(width: 4),
               Text(
-                article!.publishedAt!,
+                article!.publishedAt ?? '',
                 style: const TextStyle(
                   fontSize: 12,
                 ),

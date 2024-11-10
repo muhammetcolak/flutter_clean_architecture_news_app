@@ -4,7 +4,6 @@ import 'package:flutter_clean_architecture_news_app/features/daily_news/data/rep
 import 'package:flutter_clean_architecture_news_app/features/daily_news/domain/repositories/article_repository.dart';
 import 'package:flutter_clean_architecture_news_app/features/daily_news/domain/usecases/get_news_articles.dart';
 import 'package:flutter_clean_architecture_news_app/features/daily_news/presentation/bloc/article/remote/remote_article_bloc.dart';
-import 'package:flutter_clean_architecture_news_app/features/daily_news/presentation/bloc/article/remote/remote_article_state.dart';
 import 'package:get_it/get_it.dart';
 
 
