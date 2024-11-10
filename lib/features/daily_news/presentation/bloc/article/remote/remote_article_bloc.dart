@@ -22,6 +22,10 @@ final GetArticleUseCase _getArticleUseCase;
     }
 
     if(dataState is DataFailed){
+    // Debug
+    print("errorrrr:");
+    print(dataState.error!.message);
+
       emit(
         RemoteArticlesError(dataState.error!)
       );
